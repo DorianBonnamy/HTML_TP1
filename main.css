@@ -1,0 +1,94 @@
+html{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+body{
+    background-image: url(solution/assets/http___o.aolcdn.com_hss_storage_midas_2ad17659d05f76591b98ab16462e0015_206616910_Windows+95.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:20px;
+}
+
+main{
+    border: solid grey 1px;
+    background-color: white;
+    padding:20px;
+    max-width: 800px;
+    margin:auto;
+}
+
+h1, h2, h3 {
+    font-family: "Helvetica", Arial, sans-serif;
+    line-height: 1.15;
+}
+
+h1{
+    border: solid red 1px;
+    padding : 20px;
+    margin-top : 0px;
+    text-align: center;
+}
+
+h2{
+    border-bottom: solid red 1px;
+    padding-bottom: 10px;
+    padding-top: 40px;
+}
+
+table{
+    width:100%;
+    margin:40px 0px;
+}
+
+td{
+    font-family: "Helvetica", Arial, sans-serif;
+    font-weight: bold;
+    color : #ff423c;
+    font-size: 30px;
+    text-align: center;
+}
+
+.tiramisu{
+    float:right;
+    width:40%;
+    height:auto;
+    padding: 5%0%   ; /*Top Right Bottom Left*/
+}
+
+.H2Quantite{
+    width:50%;
+}
+
+
+#nombre{
+    width:3em;
+    text-align: right;
+}
+li {list-style-type: none;}
+
+.Quantite li:before {
+	content: "→ "; /* on affiche une chaîne de caractère */
+}
+
+ol {
+    counter-reset: ol;
+    page-break-inside: avoid;
+}
+
+ol > li:before {
+    display: inline-block;
+    content: counter(ol) ". ";
+    counter-increment: ol;
+    margin-right: 0.5em;    
+}
+
+.HPreparation{
+    columns: 2;
+    margin-bottom:40px;
+}
+
+.HPreparation > h3:first-child {
+    margin-top:0px;
+}
